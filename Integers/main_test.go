@@ -21,11 +21,18 @@ func TestAdder(t *testing.T) {
 		}
 	})
 	t.Run("Div Test", func(t *testing.T) {
-		div := Div(20, 4)
+		div, _ := Div(20, 4)
 		expected := 5.0
 
 		if div != expected {
 			t.Errorf("expected: %f but got: %f", expected, div)
+		}
+	})
+	t.Run("Zero can not be divided Test", func(t *testing.T) {
+		_, err := Div(20, 0)
+
+		if err != nil {
+			t.Errorf("0 can not be divided")
 		}
 	})
 
