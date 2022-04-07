@@ -20,5 +20,13 @@ func TestAdder(t *testing.T) {
 			t.Errorf("expected: %d but got: %d", expected, sub)
 		}
 	})
+	t.Run("Div Test", func(t *testing.T) {
+		div := Div(20, 4)
+		expected := 5.0
+
+		if div != expected {
+			t.Errorf("expected: %f but got: %f", expected, div)
+		}
+	})
 
 }
