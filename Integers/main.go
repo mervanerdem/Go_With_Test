@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-func Add(a, b int) int {
+func Add(a, b float64) float64 {
 	return a + b
 }
 
-func Sub(a, b int) int {
+func Sub(a, b float64) float64 {
 	return a - b
 }
 func Div(a, b int) (res float64, err error) {
