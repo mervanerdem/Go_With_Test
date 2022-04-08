@@ -37,4 +37,11 @@ func TestAdder(t *testing.T) {
 		}
 	})
 
+	t.Run("Multiplication Test", func(t *testing.T) {
+		div := Mult(3, 4)
+		expected := 12.0
+
+		assertCorrectMessage(t, div, expected)
+	})
+
 }

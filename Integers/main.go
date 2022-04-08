@@ -17,6 +17,9 @@ func Div(a, b int) (res float64, err error) {
 	res = float64(a) / float64(b)
 	return res, nil
 }
+func Mult(a, b float64) float64 {
+	return a * b
+}
 
 func main() {
 
